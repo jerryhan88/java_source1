@@ -1,5 +1,7 @@
 package data_structure;
 
+// sorting, set, tree~
+
 import java.util.*;
 import java.io.*;
 
@@ -25,6 +27,14 @@ public class Jukebox5 {
 		Collections.sort(songList, artistCompare);
 		
 		System.out.println(songList);
+		
+		HashSet<Song> songSet = new HashSet<Song>();
+		songSet.addAll(songList);
+		System.out.println(songSet);
+		
+		TreeSet<Song> songTreeSet = new TreeSet<Song>();
+		songTreeSet.addAll(songTreeSet);
+		System.out.println(songSet);
 	}
 	
 	void getSongs() {
